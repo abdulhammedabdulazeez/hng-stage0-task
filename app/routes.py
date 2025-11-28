@@ -43,6 +43,7 @@ async def get_me(request: Request):
     try:
         response_data = await get_user_info()
         logger.info("GET /me response sent successfully")
+        print(response_data)
         return response_data
 
     except Exception as exc:
